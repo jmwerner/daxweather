@@ -2,12 +2,12 @@
 
 $(function ()
 {
-	$.get("http://ipinfo.io", function(response)
+	$.get("https://ipinfo.io", function(response)
 	{
 
 		var location = response.city + "," + response.country;
 
-		$.get("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=9de0b2c1e86e5e8c392cd24fc34f1607", function(data)
+		$.get("https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=9de0b2c1e86e5e8c392cd24fc34f1607", function(data)
 		{
 			console.log(data)
 			var description = data.weather[0].description;
