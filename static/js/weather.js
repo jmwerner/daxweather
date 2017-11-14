@@ -14,10 +14,12 @@ $(function ()
 			var icon = "static/img/" + data.weather[0].icon + ".jpg";
 			var celcius = Math.round(data.main.temp - 273.15);
 			var fahrenheit = Math.round(celcius * 9/5 + 32);
+			var city_name = data.name
 
-			$("h2").text(description);
+			$("#current_conditions").text(description);
 			$("body").css( "backgroundImage", "url(" + icon + ")");
 			$("#f").text(fahrenheit);
+			$("#city").text(city_name)
 
 		});
 
