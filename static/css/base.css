@@ -1,0 +1,105 @@
+*,
+*:after,
+*:before
+{
+	margin:						0;
+	padding:					0;
+
+	box-sizing:					border-box;
+	-moz-box-sizing:			border-box;
+	-webkit-box-sizing:			border-box;
+}
+
+::selection { background:		rgba(255,255,255,.5); }
+
+::-moz-selection { background: 	rgba(255,255,255,.5); }
+
+body
+{
+	background: 				no-repeat center center fixed;
+	font:						1em Helvetica, Arial;
+	margin:						0;
+	padding:					0;
+
+	background-size:			cover;
+	-moz-background-size:		cover;
+	-o-background-size:			cover;
+	-webkit-background-size:	cover;
+
+
+}
+
+.share
+{
+	padding:					20px;
+
+	position:					fixed;
+	top:						0;
+	left:						0;
+}
+
+.twitter-share-button
+{
+	display: 					block;
+	margin-bottom: 				5px;
+}
+
+.container
+{
+	height:						400px;
+	margin-left:				-277.5px;
+	margin-top:					250px;
+	/* margin-bottom:			0px; */
+	width:						555px;
+
+	position: 					fixed;
+	bottom:						0;
+	left:						50%;
+}
+
+.info
+{
+	padding:					20px;
+
+	position: 					fixed;
+	bottom:						0;
+	left:						0;
+}
+
+.info h1
+{
+	font-size:					3.5em;
+}
+
+.info h2
+{
+	font-size:					2.25em;
+}
+
+.madeby
+{
+	font-size:					.8em;
+	font-weight:				bold;
+	padding:					20px;
+	text-shadow:				0 0 2px #000;
+
+	position:					fixed;
+	right:						0;
+	bottom:						0;
+}
+
+.madeby a
+{
+	color:						#fff;
+}
+
+/* Need to figure out how to get the image of text to change with temperature */
+
+    .weathertext {
+                width:550px;
+                height:550px;
+                background: url(img/words/02n.png);
+                background-repeat: no-repeat;
+                background-attachment: center center;
+                background-size: 550px 550px;
+            }
