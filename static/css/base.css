@@ -29,19 +29,11 @@ body
 
 }
 
-.share
-{
-	padding:					20px;
-
-	position:					fixed;
-	top:						0;
-	left:						0;
-}
-
-.twitter-share-button
-{
-	display: 					block;
-	margin-bottom: 				5px;
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container
@@ -76,17 +68,6 @@ body
 	font-size:					2.25em;
 }
 
-.madeby
-{
-	font-size:					.8em;
-	font-weight:				bold;
-	padding:					20px;
-	text-shadow:				0 0 2px #000;
-
-	position:					fixed;
-	right:						0;
-	bottom:						0;
-}
 
 .madeby a
 {
