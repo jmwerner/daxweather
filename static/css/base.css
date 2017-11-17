@@ -71,6 +71,14 @@ h1
 .temp
 {
     vertical-align: top;
+    float:left;
+    padding: 20px;
+}
+
+.wind
+{
+    vertical-align: top;
+    float:right;
     padding: 20px;
 }
 
