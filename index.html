@@ -1,59 +1,73 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-
 	<head>
-
-		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Expires" content="0" />
-
-		<meta charset="utf-8" />
-
 		<title>DAXWEATHER</title>
-
-		<link rel="stylesheet" type="text/css" href="static/css/base.css" />
-
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
 
-	<body>
+			<!-- Header -->
+				<div id="header">
 
-		<div class="topnav">
-			<div class="city_selection" href="#" value="5231851">Sioux Falls</div>
-			<div class="city_selection" href="#" value="4400423">New London</div>
-			<div class="city_selection" href="#" value="5372223">Menlo Park</div>
-			<div class="city_selection" href="#" value="5074792">Papillion</div>
-			<div class="city_selection" href="#" value="2646507">Houston</div>
-			<div class="city_selection" href="#" value="4346913">Aberdeen</div>
+					<!-- Inner -->
+						<div class="inner">
+
+							<h1 class="top-left"><span id="temperature">Not Connected</span>°F</h1>
+							
+							<header>
+								<div class="container">
+									<img class="centered" id="face_picture" height=500 width=500 src="assets/img/dax/01d.png"/>
+								</div>
+
+							</header>
+							<footer>
+								<div class="bottom-left">
+									<h1><span id="city">Not Connected</span></h1>
+								</div>
+								<div class="bottom-right">
+									<h1><span id="current_conditions">Not Connected</span></h1>
+								</div>
+							</footer>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li>
+									<a href="#">City</a>
+									<ul>
+										<li><a href="#" class="city_selection" value="5231851">Sioux Falls</a></li>
+										<li><a href="#" class="city_selection" value="4400423">New London</a></li>
+										<li><a href="#" class="city_selection" value="5372223">Menlo Park</a></li>
+										<li><a href="#" class="city_selection" value="5074792">Papillion</a></li>
+										<li><a href="#" class="city_selection" value="2646507">Houston</a></li>
+										<li><a href="#" class="city_selection" value="4346913">Aberdeen</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+				</div>
 		</div>
 
-		<h1 class="temp"><span id="f">0</span>°F</h1>
-
-		<div class="wind">
-
-			<div style="position:relative">
-			    <img src="static/img/compass.png" height=150px width=150px style="position:absolute;"/>
-			    <img src='static/img/arrow.png' class="wind_vector" height=150px width=150px style="position:absolute;" id='wind_arrow' />
-				<h1 style="position:relative; padding-top:150px;"><span id="speed">0</span> mph</h1>
-			</div>
-
-		</div>
-
-		<div class="container">
-
-			<img class="centered" id="face_picture" height=350 width=350 src=""/>
-
-		</div>
-
-		<div class="info">
-
-			<h1><span id="current_conditions">0</span></h1>
-			<h2><span id="city">0</span></h2>
-
-		</div>
-
-		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="static/js/weather.js"></script>
-
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.onvisible.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/weather.js"></script>
 	</body>
-
 </html>
