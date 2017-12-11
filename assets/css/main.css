@@ -2102,7 +2102,7 @@
 		background-attachment: fixed;
 		color: #fff;
 		text-align: center;
-		padding: 7.5em 0 2em 0;
+		padding: 2em 0 2em 0;
 		cursor: default;
 	}
 
@@ -2421,28 +2421,6 @@
 					color: rgba(212, 212, 212, 0.85);
 				}
 
-	#header .inner footer .bottom-left{
-		float:left;
-		width: 600px;
-		text-align:left;
-	}
-
-	#header .inner footer .bottom-right{
-		margin-left: 620px;
-	}
-
-
-/*
-	#header .inner .top-left{
-		float:left;
-		width: 600px;
-		text-align:left;
-	}
-
-	#header .inner .top-right{
-		margin-left: 620px;
-	}
-*/
 /* Carousel */
 
 	.carousel {
