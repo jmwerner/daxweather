@@ -2952,7 +2952,7 @@
 
 			#header {
 				background-attachment: scroll;
-				padding: 2.5em 0 0 0;
+				padding: 0 0 0 0;
 			}
 
 				#header .inner {
@@ -2974,9 +2974,10 @@
 					margin-bottom: 2.5em;
 				}
 
+			/*Change padding here*/
 			body.homepage #header {
 				min-height: 0;
-				padding: 5.5em 0 5em 0;
+				padding: 1em 0 1em 0;
 				height: auto;
 			}
 
@@ -3040,3 +3041,7 @@
 					}
 
 	}
+
+.city_selection {
+	cursor: pointer	
+}
