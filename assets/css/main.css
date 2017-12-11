@@ -1713,7 +1713,7 @@
 	}
 
 	header {
-		margin: 0 0 1em 0;
+		margin: 0 0 0 0;
 	}
 
 		header > p {
@@ -2163,7 +2163,7 @@
 			}
 
 		#header footer {
-			margin: 1em 0 0 0;
+			margin: 0 0 0 0;
 		}
 
 	body.homepage #header {
