@@ -114,6 +114,8 @@ $(document).ready(function(){
                 });
             });
         });
+        // Hide nav panel
+        $(document.body).removeClass('navPanel-visible')
     });
 });
 
