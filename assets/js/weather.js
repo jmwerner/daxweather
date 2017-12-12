@@ -81,7 +81,7 @@ $(document).ready(function(){
         cityMap['<span class="indent-1"></span>New London'] = '4400423';
         cityMap['<span class="indent-1"></span>Menlo Park'] = '5372223';
         cityMap['<span class="indent-1"></span>Papillion'] = '5074792';
-        cityMap['<span class="indent-1"></span>Houston'] = '2646507';
+        cityMap['<span class="indent-1"></span>Houston'] = '4699066';
         cityMap['<span class="indent-1"></span>Aberdeen'] = '4346913';
 
         var location_id = cityMap[this.innerHTML];
