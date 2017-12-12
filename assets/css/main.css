@@ -3043,5 +3043,9 @@
 	}
 
 .city_selection {
-	cursor: pointer	
+	cursor: pointer;
+}
+
+#current_conditions {
+	text-transform: capitalize;
 }
