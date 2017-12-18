@@ -6,6 +6,13 @@
             <stop offset="30%" stop-color="#99DFFF" class="svgwi-cloud-color2"/>           
             <stop offset="75%" stop-color="#4B91D8" class="svgwi-cloud-color3"/>
         </radialGradient>
+
+        <!-- Moon Color  -->
+        <linearGradient id="SVGWI13_moon_color" x1="0%" y1="0%" x2="0%" y2="100%">
+           <stop offset="0%" stop-color="#FDFFDB" class="svgwi-moon-color1" />
+           <stop offset="100%" stop-color="#8BD2FF" class="svgwi-moon-color2" />
+        </linearGradient>
+
         
         <!-- Rain Drops Color  -->
         <linearGradient id="SVGWI05_rain_drop_color" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -24,6 +31,12 @@
         c2.374,0,4.648-0.892,6.388-2.446c1.751,1.604,4.063,2.525,6.477,2.525c2.031,0,3.976-0.632,5.623-1.829
         c3.711-2.696,4.913-7.578,3.13-11.614c1.626-0.916,2.95-2.289,3.817-3.99C20.113-0.224,20.317-2.819,19.527-5.251z"
         />
+
+        <!-- Moon masked for crescent  -->
+        <mask id="SVGWI13_moon_mask" >
+            <circle fill="#ffffff" cx="50" cy="50" r="14"/>
+            <circle id="SVGWI13_moon_eclipse" fill="#000000" cx="70" cy="40" r="14"/>
+        </mask>
         
         <!-- Cloud Set (3 Parts assembled)  -->
         <clipPath id="SVGWI05_cloud">
@@ -56,6 +69,9 @@
             <use x="0" y="155" xlink:href="#SVGWI05_water_drop" />          
         </clipPath>     
     </defs>
+    
+    <!-- Crescent Moon  --> 
+    <circle id="SVGWI13_moon" width="28" height="28" fill="url(#SVGWI13_moon_color)" cx="50" cy="50" r="14" mask="url(#SVGWI13_moon_mask)" transform="rotate(0 82,-18) translate(32, -32)"/>
     
     <!-- Cloud inserted here as clip path -->
     <rect width="100" height="100" fill="url(#SVGWI05_cloud_color)" clip-path="url(#SVGWI05_cloud)" transform="translate(2, -5) scale(.95)" />  
