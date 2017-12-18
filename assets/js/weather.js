@@ -15,11 +15,13 @@ $(function ()
 			var wind_speed = data.wind.speed;
 
 			$("#current_conditions").text(description);
-            $("#header").css("background-image", "url(" + icon + ")");            
+            $("#header").css("background-image", "url(" + icon + ")");        
 			$("#temperature").text(fahrenheit);
 			$("#speed").text(wind_speed);
 			$("#city").text(city_name);
             $("#face_picture").attr("src", face_picture);
+            $("#animated_weather_svg").attr("data", "assets/svg/" + data.weather[0].icon + ".svg");
+
             $('.wind_vector').each(function() {
                 var deg = data.wind.deg;
                 var rotate = 'rotate(' + deg + 'deg)';
@@ -31,6 +33,7 @@ $(function ()
                     'transform': rotate 
                 });
             });
+            $("object param[name=flashvars]").attr("value", $("object").attr("data"));
 		});
 
 	}, "jsonp");
@@ -58,6 +61,9 @@ $(document).ready(function(){
             $("#speed").text(wind_speed);
             $("#city").text(city_name);
             $("#face_picture").attr("src", face_picture);
+
+            $("#animated_weather_svg").replaceWith('<object id=\"animated_weather_svg\" type=\"image/svg+xml\" data=\"assets/svg/' + data.weather[0].icon + '.svg\" width=450 height=450></object>');
+
             $('.wind_vector').each(function() {
                 var deg = data.wind.deg;
                 var rotate = 'rotate(' + deg + 'deg)';
@@ -102,6 +108,9 @@ $(document).ready(function(){
             $("#speed").text(wind_speed);
             $("#city").text(city_name);
             $("#face_picture").attr("src", face_picture);
+
+            $("#animated_weather_svg").replaceWith('<object id=\"animated_weather_svg\" type=\"image/svg+xml\" data=\"assets/svg/' + data.weather[0].icon + '.svg\" width=450 height=450></object>');
+
             $('.wind_vector').each(function() {
                 var deg = data.wind.deg;
                 var rotate = 'rotate(' + deg + 'deg)';
@@ -113,12 +122,10 @@ $(document).ready(function(){
                     'transform': rotate 
                 });
             });
+            $("object param[name=flashvars]").attr("value", $("object").attr("data"));
         });
         // Hide nav panel
         $(document.body).removeClass('navPanel-visible')
     });
 });
-
-
-
 
