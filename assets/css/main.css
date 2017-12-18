@@ -3049,3 +3049,13 @@
 #current_conditions {
 	text-transform: capitalize;
 }
+
+.weather_animation_container {
+	float:left;
+}
+
+.face_stacking_container {
+	position:absolute;
+	padding-left:5em;
+	padding-top:3em;
+}

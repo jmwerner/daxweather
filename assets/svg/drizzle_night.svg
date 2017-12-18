@@ -1,0 +1,85 @@
+<svg id="SVGWI14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+    <defs>
+        <!-- Moon Color  -->
+        <linearGradient id="SVGWI14_moon_color" x1="0%" y1="0%" x2="0%" y2="100%">
+           <stop offset="0%" stop-color="#FDFFDB" class="svgwi-moon-color1" />
+           <stop offset="100%" stop-color="#8BD2FF" class="svgwi-moon-color2" />
+        </linearGradient>
+        
+        <!-- Cloud Color  -->
+        <radialGradient id="SVGWI14_cloud_color" cx="60%" cy="20%" r="100%">
+            <stop offset="0%" stop-color="#FFFFFF" class="svgwi-cloud-color1"/>
+            <stop offset="30%" stop-color="#99DFFF" class="svgwi-cloud-color2"/>           
+            <stop offset="75%" stop-color="#4B91D8" class="svgwi-cloud-color3"/>
+        </radialGradient>
+        
+        <!-- Moon masked for crescent  -->
+        <mask id="SVGWI14_moon_mask" >
+            <circle fill="#ffffff" cx="50" cy="50" r="14"/>
+            <circle id="SVGWI14_moon_eclipse" fill="#000000" cx="70" cy="40" r="14"/>
+        </mask>
+        
+        <!-- Rain Drops Color  -->
+        <linearGradient id="SVGWI14_rain_drop_color" x1="0%" y1="0%" x2="0%" y2="100%">
+           <stop offset="10%" stop-color="#FFFFFF" class="svgwi-rain-color1" stop-opacity="0" />
+           <stop offset="45%" stop-color="#FFFFFF" class="svgwi-rain-color1" stop-opacity="1" />
+           <stop offset="60%" stop-color="#78BEEF" class="svgwi-rain-color2" stop-opacity="1" />
+           <stop offset="85%" stop-color="#78BEEF" class="svgwi-rain-color2" stop-opacity="1" />
+           <stop offset="100%" stop-color="#78BEEF" class="svgwi-rain-color2" stop-opacity="0" />
+        </linearGradient>       
+        
+        <!-- Part of Cloud  -->
+        <path id="SVGWI14_cloud_part" fill="#FFFFFF" d="M19.527-5.251C18.24-9.21,14.581-11.87,10.42-11.87c-0.324,0-0.646,0.023-0.967,0.055
+        c-0.885-4.372-4.756-7.673-9.385-7.673c-4.634,0-8.509,3.309-9.388,7.688c-0.366-0.042-0.733-0.071-1.101-0.071
+        c-4.161,0-7.82,2.658-9.105,6.617c-0.791,2.433-0.586,5.025,0.575,7.305c0.848,1.663,2.132,3.008,3.709,3.923
+        c-0.738,1.667-0.985,3.513-0.693,5.357c0.4,2.526,1.76,4.746,3.829,6.249c1.647,1.196,3.591,1.83,5.623,1.83
+        c2.374,0,4.648-0.892,6.388-2.446c1.751,1.604,4.063,2.525,6.477,2.525c2.031,0,3.976-0.632,5.623-1.829
+        c3.711-2.696,4.913-7.578,3.13-11.614c1.626-0.916,2.95-2.289,3.817-3.99C20.113-0.224,20.317-2.819,19.527-5.251z"
+        />
+        
+        <!-- Cloud Set (3 Parts assembled)  -->
+        <clipPath id="SVGWI14_cloud">
+            <use x="28" y="52" xlink:href="#SVGWI14_cloud_part" />
+            <use x="72" y="52" xlink:href="#SVGWI14_cloud_part" />
+            <use x="-35" y="-35" xlink:href="#SVGWI14_cloud_part" transform="scale(1.4) rotate(180)" />           
+        </clipPath> 
+
+        <!-- Single Rain Drop  -->
+        <path id="SVGWI14_water_drop" d="M0,0c0.823,2,2.285,6.545,2.285,7.875S1.516,10.75,0,10.75s-2.285-1.545-2.285-2.875S-0.823,2,0,0z"/>
+        
+        <!-- Group of Rain Drops  -->
+        <clipPath id="SVGWI14_drop_set" transform="rotate(30) translate(75, 40)">
+            <use x="-10" y="0" xlink:href="#SVGWI14_water_drop" />
+            <use x="10" y="0" xlink:href="#SVGWI14_water_drop" />
+            <use x="-15" y="20" xlink:href="#SVGWI14_water_drop" />
+            <use x="15" y="15" xlink:href="#SVGWI14_water_drop" />          
+            <use x="0" y="35" xlink:href="#SVGWI14_water_drop" />
+            
+            <use x="-10" y="60" xlink:href="#SVGWI14_water_drop" />
+            <use x="10" y="60" xlink:href="#SVGWI14_water_drop" />
+            <use x="-15" y="80" xlink:href="#SVGWI14_water_drop" />
+            <use x="15" y="75" xlink:href="#SVGWI14_water_drop" />          
+            <use x="0" y="95" xlink:href="#SVGWI14_water_drop" />
+
+            <use x="-10" y="120" xlink:href="#SVGWI14_water_drop" />
+            <use x="10" y="120" xlink:href="#SVGWI14_water_drop" />
+            <use x="-15" y="140" xlink:href="#SVGWI14_water_drop" />
+            <use x="15" y="135" xlink:href="#SVGWI14_water_drop" />         
+            <use x="0" y="155" xlink:href="#SVGWI14_water_drop" />          
+        </clipPath>     
+    </defs>
+
+    <!-- Crescent Moon  --> 
+    <circle id="SVGWI14_moon" width="28" height="28" fill="url(#SVGWI14_moon_color)" cx="50" cy="50" r="14" mask="url(#SVGWI14_moon_mask)" transform="rotate(0 82,-18) translate(32, -32)"/>
+    
+    <!-- Cloud inserted here as clip path -->
+    <rect width="100" height="100" fill="url(#SVGWI14_cloud_color)" clip-path="url(#SVGWI14_cloud)" transform="translate(2, 0) scale(.95)" />   
+    
+    <!-- Rain drops set inserted here as clip path -->
+    <rect y="35" width="100" height="60" fill="url(#SVGWI14_rain_drop_color)" clip-path="url(#SVGWI14_drop_set)"/>
+    
+    <!-- JavaScript takes care the entire animation part -->
+    <script type="text/javascript"><![CDATA[
+        !function(){function r(){requestAnimationFrame(r),l+=b,i.setAttribute("transform","rotate("+l+")"),m+=c,m>0&&(m-=60),j.setAttribute("transform","rotate(30) translate(75,"+m+")"),k.setAttribute("transform","translate(0,0)"),(n>p||p>o)&&(q*=-1),p+=a*q,g.setAttribute("transform","rotate("+p+" 80,17) translate(30, -33)"),h.setAttribute("cx",60+p/8)}for(var a=.5,b=.5,c=1,d=0,e=["ms","moz","webkit","o"],f=0;f<e.length&&!window.requestAnimationFrame;++f)window.requestAnimationFrame=window[e[f]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[e[f]+"CancelAnimationFrame"]||window[e[f]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(a,b){var c=(new Date).getTime(),e=Math.max(0,16-(c-d)),f=window.setTimeout(function(){a(c+e)},e);return d=c+e,f}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)});var g=document.getElementById("SVGWI14_moon"),h=document.getElementById("SVGWI14_moon_eclipse"),i=document.getElementById("SVGWI14_cloud_part"),j=document.getElementById("SVGWI14_drop_set"),k=document.getElementById("SVGWI14_water_drop"),l=0,m=0,n=-20,o=20,p=n,q=1;r()}();
+    ]]></script>
+</svg>

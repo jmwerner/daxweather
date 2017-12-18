@@ -1,0 +1,97 @@
+<svg id="SVGWI16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+    <defs>
+        <!-- Moon Color  -->
+        <linearGradient id="SVGWI16_moon_color" x1="0%" y1="0%" x2="0%" y2="100%">
+           <stop offset="0%" stop-color="#FDFFDB" class="svgwi-moon-color1" />
+           <stop offset="100%" stop-color="#8BD2FF" class="svgwi-moon-color2" />
+        </linearGradient>
+        
+        <!-- Cloud Color  -->
+        <radialGradient id="SVGWI16_cloud_color" cx="60%" cy="20%" r="100%">
+            <stop offset="0%" stop-color="#FFFFFF" class="svgwi-cloud-color1"/>
+            <stop offset="30%" stop-color="#99DFFF" class="svgwi-cloud-color2"/>           
+            <stop offset="75%" stop-color="#4B91D8" class="svgwi-cloud-color3"/>
+        </radialGradient>
+        
+        <!-- Rain Drops Color  -->
+        <linearGradient id="SVGWI16_rain_drop_color" x1="0%" y1="0%" x2="0%" y2="100%">
+           <stop offset="10%" stop-color="#FFFFFF" class="svgwi-rain-color1" stop-opacity="0" />
+           <stop offset="45%" stop-color="#FFFFFF" class="svgwi-rain-color1" stop-opacity="1" />
+           <stop offset="60%" stop-color="#78BEEF" class="svgwi-rain-color2" stop-opacity="1" />
+           <stop offset="85%" stop-color="#78BEEF" class="svgwi-rain-color2" stop-opacity="1" />
+           <stop offset="100%" stop-color="#78BEEF" class="svgwi-rain-color2" stop-opacity="0" />
+        </linearGradient>
+        
+        <!-- Moon masked for crescent  -->
+        <mask id="SVGWI16_moon_mask" >
+            <circle fill="#ffffff" cx="50" cy="50" r="14"/>
+            <circle id="SVGWI16_moon_eclipse" fill="#000000" cx="70" cy="40" r="14"/>
+        </mask>
+        
+        <!-- Part of Cloud  -->
+        <path id="SVGWI16_cloud_part" fill="#FFFFFF" d="M19.527-5.251C18.24-9.21,14.581-11.87,10.42-11.87c-0.324,0-0.646,0.023-0.967,0.055
+        c-0.885-4.372-4.756-7.673-9.385-7.673c-4.634,0-8.509,3.309-9.388,7.688c-0.366-0.042-0.733-0.071-1.101-0.071
+        c-4.161,0-7.82,2.658-9.105,6.617c-0.791,2.433-0.586,5.025,0.575,7.305c0.848,1.663,2.132,3.008,3.709,3.923
+        c-0.738,1.667-0.985,3.513-0.693,5.357c0.4,2.526,1.76,4.746,3.829,6.249c1.647,1.196,3.591,1.83,5.623,1.83
+        c2.374,0,4.648-0.892,6.388-2.446c1.751,1.604,4.063,2.525,6.477,2.525c2.031,0,3.976-0.632,5.623-1.829
+        c3.711-2.696,4.913-7.578,3.13-11.614c1.626-0.916,2.95-2.289,3.817-3.99C20.113-0.224,20.317-2.819,19.527-5.251z"
+        />
+        
+        <!-- Cloud Set (3 Parts assembled)  -->
+        <clipPath id="SVGWI16_cloud">
+            <use x="28" y="52" xlink:href="#SVGWI16_cloud_part" />
+            <use x="72" y="52" xlink:href="#SVGWI16_cloud_part" />
+            <use x="-35" y="-35" xlink:href="#SVGWI16_cloud_part" transform="scale(1.4) rotate(180)" />           
+        </clipPath> 
+
+        <!-- Single Snow Flake  -->
+        <polygon id="SVGWI16_snow_flake" fill-rule="evenodd" clip-rule="evenodd" fill="#D82A2A" points="6.928,0 6.563,-0.633 4.949,-0.633 5.653,-1.852 
+            5.287,-2.485 4.557,-2.485 3.487,-0.633 1.096,-0.633 2.292,-2.703 4.43,-2.703 4.794,-3.336 4.43,-3.969 3.022,-3.969 3.83,-5.367 
+            3.464,-6 2.734,-6 1.926,-4.602 1.223,-5.821 0.492,-5.821 0.126,-5.188 1.195,-3.336 0,-1.265 -1.195,-3.336 -0.126,-5.188 
+            -0.492,-5.821 -1.223,-5.821 -1.926,-4.602 -2.734,-6 -3.464,-6 -3.83,-5.367 -3.022,-3.969 -4.43,-3.969 -4.794,-3.336 
+            -4.43,-2.703 -2.292,-2.703 -1.096,-0.633 -3.487,-0.633 -4.556,-2.485 -5.287,-2.485 -5.653,-1.852 -4.949,-0.633 -6.563,-0.633 
+            -6.928,0 -6.563,0.633 -4.949,0.633 -5.653,1.852 -5.287,2.485 -4.556,2.485 -3.487,0.633 -1.096,0.633 -2.292,2.703 -4.43,2.703 
+            -4.794,3.336 -4.43,3.969 -3.022,3.969 -3.83,5.367 -3.464,6 -2.734,6 -1.926,4.602 -1.223,5.821 -0.492,5.821 -0.126,5.188 
+            -1.195,3.336 0,1.265 1.195,3.336 0.127,5.188 0.492,5.821 1.223,5.821 1.926,4.602 2.734,6 3.464,6 3.83,5.367 3.022,3.969 
+            4.43,3.969 4.795,3.336 4.43,2.703 2.292,2.703 1.096,0.633 3.487,0.633 4.557,2.485 5.287,2.485 5.653,1.852 4.949,0.633 
+            6.563,0.633 "/>
+            
+        <!-- Single Snow Circle  -->
+        <circle id="SVGWI16_snow_circle" fill-rule="evenodd" clip-rule="evenodd" fill="#D82A2A" cx="0" cy="0" r="2.031"/>
+        
+        <!-- Group of Snow Flakes  -->
+        <clipPath id="SVGWI16_snow_set" transform="translate(50, 40)">
+            <use x="-10" y="0" xlink:href="#SVGWI16_snow_circle" />
+            <use x="10" y="0" xlink:href="#SVGWI16_snow_flake" />
+            <use x="-15" y="20" xlink:href="#SVGWI16_snow_flake" />
+            <use x="15" y="15" xlink:href="#SVGWI16_snow_circle" />         
+            <use x="0" y="35" xlink:href="#SVGWI16_snow_flake" />
+            
+            <use x="-10" y="60" xlink:href="#SVGWI16_snow_circle"/>
+            <use x="10" y="60" xlink:href="#SVGWI16_snow_flake" />
+            <use x="-15" y="80" xlink:href="#SVGWI16_snow_flake" />
+            <use x="15" y="75" xlink:href="#SVGWI16_snow_circle" />         
+            <use x="0" y="95" xlink:href="#SVGWI16_snow_flake" />
+
+            <use x="-10" y="120" xlink:href="#SVGWI16_snow_circle" />
+            <use x="10" y="120" xlink:href="#SVGWI16_snow_flake" />
+            <use x="-15" y="140" xlink:href="#SVGWI16_snow_flake" />
+            <use x="15" y="135" xlink:href="#SVGWI16_snow_circle" />            
+            <use x="0" y="155" xlink:href="#SVGWI16_snow_flake" />
+        </clipPath>     
+    </defs>
+
+    <!-- Crescent Moon  --> 
+    <circle id="SVGWI16_moon" width="28" height="28" fill="url(#SVGWI16_moon_color)" cx="50" cy="50" r="14" mask="url(#SVGWI16_moon_mask)" transform="rotate(0 82,-18) translate(32, -32)"/>
+    
+    <!-- Cloud inserted here as clip path -->
+    <rect width="100" height="100" fill="url(#SVGWI16_cloud_color)" clip-path="url(#SVGWI16_cloud)" transform="translate(2, 0) scale(.95)" />   
+    
+    <!-- Snow Flake set inserted here as clip path -->
+    <rect y="45" width="100" height="50" fill="url(#SVGWI16_rain_drop_color)" clip-path="url(#SVGWI16_snow_set)"/>
+    
+    <!-- JavaScript takes care the entire animation part -->
+    <script type="text/javascript"><![CDATA[
+        !function(){function t(){requestAnimationFrame(t),m+=b,i.setAttribute("transform","rotate("+m+")"),o+=c,o>0&&(o-=60),j.setAttribute("transform","translate(50,"+o+")"),n+=5,k.setAttribute("transform","rotate("+n+" 1,1)"),l.setAttribute("transform","rotate(-"+n+" 4,-4)"),(p>r||r>q)&&(s*=-1),r+=a*s,g.setAttribute("transform","rotate("+r+" 80,17) translate(30, -33)"),h.setAttribute("cx",60+r/8)}for(var a=.5,b=.5,c=1,d=0,e=["ms","moz","webkit","o"],f=0;f<e.length&&!window.requestAnimationFrame;++f)window.requestAnimationFrame=window[e[f]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[e[f]+"CancelAnimationFrame"]||window[e[f]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(a,b){var c=(new Date).getTime(),e=Math.max(0,16-(c-d)),f=window.setTimeout(function(){a(c+e)},e);return d=c+e,f}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)});var g=document.getElementById("SVGWI16_moon"),h=document.getElementById("SVGWI16_moon_eclipse"),i=document.getElementById("SVGWI16_cloud_part"),j=document.getElementById("SVGWI16_snow_set"),k=document.getElementById("SVGWI16_snow_flake"),l=document.getElementById("SVGWI16_snow_circle"),m=0,n=0,o=0,p=-20,q=20,r=p,s=1;t()}();    
+    ]]></script>
+</svg>
