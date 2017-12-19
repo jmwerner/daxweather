@@ -1988,9 +1988,10 @@
 	input[type="reset"],
 	button,
 	.button {
+		font-family: 'Arvo', serif;
 		position: relative;
 		display: inline-block;
-		background: #df7366;
+		background: #606060;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2096,7 +2097,6 @@
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -3048,6 +3048,15 @@
 
 #current_conditions {
 	text-transform: capitalize;
+	font-family: 'Arvo', serif;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#city {
+	font-family: 'Arvo', serif;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .weather_animation_container {
@@ -3059,3 +3068,4 @@
 	padding-left:3em;
 	padding-top:3em;
 }
+
