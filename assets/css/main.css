@@ -3065,7 +3065,11 @@
 
 .face_stacking_container {
 	position:absolute;
-	padding-left:3em;
-	padding-top:3em;
+	/*padding-left:3em;*/
+	padding-top:1em;
+	margin-left:auto;
+    margin-right:auto;
+    left: 0;
+    right: 0;
 }
 
