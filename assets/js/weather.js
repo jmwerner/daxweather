@@ -33,11 +33,11 @@ $(function ()
                     'transform': rotate 
                 });
             });
-            $("object param[name=flashvars]").attr("value", $("object").attr("data"));
 		});
 
 	}, "jsonp");
 });
+
 
 // Non-mobile dropdown menu
 $(document).ready(function(){
@@ -122,7 +122,6 @@ $(document).ready(function(){
                     'transform': rotate 
                 });
             });
-            $("object param[name=flashvars]").attr("value", $("object").attr("data"));
         });
         // Hide nav panel
         $(document.body).removeClass('navPanel-visible')
