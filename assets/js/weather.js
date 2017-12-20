@@ -84,7 +84,7 @@ $(document).ready(function(){
     $('.link.depth-1').on('click', function(){
         var cityMap = {};
         cityMap['<span class="indent-1"></span>Sioux Falls'] = '5231851';
-        cityMap['<span class="indent-1"></span>New London'] = '4400423';
+        cityMap['<span class="indent-1"></span>New London'] = '5039111';
         cityMap['<span class="indent-1"></span>Menlo Park'] = '5372223';
         cityMap['<span class="indent-1"></span>Papillion'] = '5074792';
         cityMap['<span class="indent-1"></span>Houston'] = '4699066';

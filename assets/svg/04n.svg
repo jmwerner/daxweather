@@ -62,14 +62,10 @@
     <rect width="100" height="100" fill="url(#SVGWI04_cloud_color2)" clip-path="url(#SVGWI04_cloud_small)" transform="translate(3, 0)" />   
     <rect width="100" height="100" fill="url(#SVGWI04_cloud_color3)" clip-path="url(#SVGWI04_cloud_small2)" transform="translate(52, 22) scale(.8)" />  
     <rect width="100" height="100" fill="url(#SVGWI04_cloud_color)" clip-path="url(#SVGWI04_cloud)" transform="translate(-2, 20) scale(.85)" /> 
-    
-    <!-- JavaScript takes care the entire animation part -->
-<!--     <script type="text/javascript"><![CDATA[
-        !function(){function n(){requestAnimationFrame(n),i+=b,h.setAttribute("transform","rotate("+i+")"),(j>l||l>k)&&(m*=-1),l+=a*m,f.setAttribute("transform","rotate("+l+" 82,27) translate(32, -23)"),g.setAttribute("cx",60+l/8)}for(var a=.5,b=.5,c=0,d=["ms","moz","webkit","o"],e=0;e<d.length&&!window.requestAnimationFrame;++e)window.requestAnimationFrame=window[d[e]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[d[e]+"CancelAnimationFrame"]||window[d[e]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(a,b){var d=(new Date).getTime(),e=Math.max(0,16-(d-c)),f=window.setTimeout(function(){a(d+e)},e);return c=d+e,f}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)});var f=document.getElementById("SVGWI13_moon"),g=document.getElementById("SVGWI13_moon_eclipse"),h=document.getElementById("SVGWI13_cloud_part"),i=0,j=-20,k=20,l=j,m=1;n()}();
-    ]]></script> -->
 
-    <!-- JavaScript takes care the entire animation part -->
+    <!-- JavaScript takes care the entire animation part-->
     <script type="text/javascript"><![CDATA[
         !function(){function g(){requestAnimationFrame(g),e+=a,f.setAttribute("transform","rotate("+e+")")}for(var a=.5,b=0,c=["ms","moz","webkit","o"],d=0;d<c.length&&!window.requestAnimationFrame;++d)window.requestAnimationFrame=window[c[d]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[c[d]+"CancelAnimationFrame"]||window[c[d]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(a,c){var d=(new Date).getTime(),e=Math.max(0,16-(d-b)),f=window.setTimeout(function(){a(d+e)},e);return b=d+e,f}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)});var e=0,f=document.getElementById("SVGWI04_cloud_part");g()}();
     ]]></script>
+
 </svg>
