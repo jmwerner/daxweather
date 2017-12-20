@@ -34,8 +34,8 @@ $(function ()
          * A function to be called if the request succeeds.
          */
         success: function(response, textStatus, jqXHR) {
-            var location = response.city + "," + response.country;
-            $.get("https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=9de0b2c1e86e5e8c392cd24fc34f1607", function(data)
+            var lat_lon = response.loc.split(',');
+            $.get("https://api.openweathermap.org/data/2.5/weather?lat=" + lat_lon[0] + "&lon=" + lat_lon[1] + "&appid=9de0b2c1e86e5e8c392cd24fc34f1607", function(data)
             {
                 var description = data.weather[0].description;
                 var icon = "assets/img/" + data.weather[0].icon + ".jpg";
