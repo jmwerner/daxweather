@@ -57,11 +57,9 @@ $(function ()
     });
 });
 
-
-
 // Non-mobile dropdown menu
 $(document).ready(function(){
-    $('.city_selection').on('click', function(){
+    $('.city_selection').bind('click touchstart', function(){
 
         var location_id = $(this).attr('value');
 
