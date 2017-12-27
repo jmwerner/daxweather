@@ -51,7 +51,7 @@ $(function ()
                 $("#speed").text(wind_speed);
                 $("#city").text(city_name);
                 $("#face_picture").attr("src", face_picture);
-                $("#animated_weather_svg").attr("data", "assets/svg/" + data.weather[0].icon + ".svg");
+                $("#animated_weather_svg").replaceWith('<object id=\"animated_weather_svg\" type=\"image/svg+xml\" data=\"assets/svg/' + data.weather[0].icon + '.svg\" width=325 height=325></object>');
             });
         }
     });
