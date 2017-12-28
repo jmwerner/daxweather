@@ -2624,6 +2624,10 @@
 				line-height: 1.65em;
 			}
 
+			header {
+				padding-top: 2em;
+			}
+
 			.tweet {
 				text-align: center;
 			}
