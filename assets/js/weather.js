@@ -107,6 +107,7 @@ $(document).ready(function(){
         cityMap['<span class="indent-1"></span>Sioux Falls'] = '5231851';
         cityMap['<span class="indent-1"></span>New London'] = '5039111';
         cityMap['<span class="indent-1"></span>Menlo Park'] = '5372223';
+        cityMap['<span class="indent-1"></span>Las Vegas'] = '5506956';
         cityMap['<span class="indent-1"></span>Papillion'] = '5074792';
         cityMap['<span class="indent-1"></span>Houston'] = '4699066';
         cityMap['<span class="indent-1"></span>Aberdeen'] = '5225857';
