@@ -19,6 +19,11 @@ $(function ()
                 var city_name = data.name;
                 var wind_speed = data.wind.speed;
 
+                $("#vegas_sign").attr("width", 0).attr("height", 0);
+                if(city_name == 'Las Vegas'){
+                    $("#vegas_sign").attr("width", 200).attr("height", 200);
+                }
+
                 $("#current_conditions").text(description);
                 $("#header").css("background-image", "url(" + icon + ")");
                 $("#temperature").text(fahrenheit);
@@ -44,6 +49,11 @@ $(function ()
                 var fahrenheit = Math.round(celcius * 9/5 + 32);
                 var city_name = data.name;
                 var wind_speed = data.wind.speed;
+
+                $("#vegas_sign").attr("width", 0).attr("height", 0);
+                if(city_name == 'Las Vegas'){
+                    $("#vegas_sign").attr("width", 200).attr("height", 200);
+                }
 
                 $("#current_conditions").text(description);
                 $("#header").css("background-image", "url(" + icon + ")");        
@@ -72,6 +82,11 @@ $(document).ready(function(){
             var fahrenheit = Math.round(celcius * 9/5 + 32);
             var city_name = data.name;
             var wind_speed = data.wind.speed;
+
+            $("#vegas_sign").attr("width", 0).attr("height", 0);
+            if(city_name == 'Las Vegas'){
+                $("#vegas_sign").attr("width", 200).attr("height", 200);
+            }
 
             $("#current_conditions").text(description);
             $("#header").css("background-image", "url(" + icon + ")");
@@ -109,6 +124,11 @@ $(document).ready(function(){
             var city_name = data.name;
             var wind_speed = data.wind.speed;
 
+            $("#vegas_sign").attr("width", 0).attr("height", 0);
+            if(city_name == 'Las Vegas'){
+                $("#vegas_sign").attr("width", 200).attr("height", 200);
+            }
+
             $("#current_conditions").text(description);
             $("#header").css("background-image", "url(" + icon + ")");
             $("#temperature").text(fahrenheit);
@@ -122,4 +142,7 @@ $(document).ready(function(){
         $(document.body).removeClass('navPanel-visible')
     });
 });
+
+
+
 

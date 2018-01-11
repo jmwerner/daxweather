@@ -3077,3 +3077,11 @@
     right: 0;
 }
 
+.vegas_container {
+	position:absolute;
+	/*padding-left:3em;*/
+    margin-right:20em;
+    left: 0;
+    right: 0;
+}
+
